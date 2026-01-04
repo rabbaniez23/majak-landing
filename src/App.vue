@@ -6,6 +6,7 @@ import Services from './components/Services.vue';
 import Testimonials from './components/Testimonials.vue';
 import CTA from './components/CTA.vue';
 import Footer from './components/Footer.vue';
+import Process from './components/Process.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Footer from './components/Footer.vue';
       <Hero />
       <About />
       <Services />
+      <Process />
       <Testimonials />
       <CTA />
     </main>
