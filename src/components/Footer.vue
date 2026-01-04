@@ -1,80 +1,74 @@
+<script setup>
+</script>
+
 <template>
-  <footer id="contact" class="bg-[#020617] border-t border-white/5 pt-20 pb-10 relative z-10 overflow-hidden">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-majak-blue/5 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
-
-    <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-12 gap-12 mb-16">
-        
-        <div class="md:col-span-5">
-           <div class="flex items-center gap-3 mb-6">
-            <div class="w-10 h-10 bg-gradient-to-br from-majak-blue to-majak-orange rounded-xl flex items-center justify-center text-white font-bold text-sm shadow-lg">IO</div>
-            <span class="text-2xl font-extrabold text-white tracking-tight">MA<span class="text-majak-orange">JAK</span></span>
-          </div>
-           <p class="text-gray-400 leading-relaxed mb-6 pr-4">
-             Platform layanan perpajakan modern yang membantu individu dan badan usaha mengelola kewajiban pajak dengan mudah, cepat, dan tepat. Hemat waktu, hindari denda.
-           </p>
-           <div class="flex gap-4">
-             <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-majak-blue hover:text-white transition-all">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-             </a>
-             <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-majak-orange hover:text-white transition-all">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-             </a>
-           </div>
+  <footer class="bg-dark text-white pt-16 pb-8 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Brand -->
+        <div class="space-y-4">
+          <h3 class="text-3xl font-heading font-bold text-white tracking-tight">MAJAK</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Mitra perpajakan profesional untuk pengusaha dan individu di Indonesia. Mengedepankan kepastian dan kepatuhan.
+          </p>
         </div>
 
-        <div class="md:col-span-2 md:col-start-7">
-          <h4 class="font-bold text-white mb-6">Menu</h4>
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-gray-200">Navigasi</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#home" class="hover:text-accent transition-colors">Beranda</a></li>
+            <li><a href="#about" class="hover:text-accent transition-colors">Tentang Kami</a></li>
+            <li><a href="#services" class="hover:text-accent transition-colors">Layanan</a></li>
+            <li><a href="#faq" class="hover:text-accent transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-gray-200">Hubungi Kami</h4>
           <ul class="space-y-4 text-sm text-gray-400">
-            <li><a href="#home" class="hover:text-majak-orange transition-colors">Beranda</a></li>
-            <li><a href="#services" class="hover:text-majak-orange transition-colors">Layanan Kami</a></li>
-            <li><a href="#pricing" class="hover:text-majak-orange transition-colors">Harga Paket</a></li>
-            <li><a href="#about" class="hover:text-majak-orange transition-colors">Tentang Kami</a></li>
-            <li><a href="#faq" class="hover:text-majak-orange transition-colors">Bantuan</a></li>
-          </ul>
-        </div>
-
-        <div class="md:col-span-4">
-          <h4 class="font-bold text-white mb-6">Hubungi Kami</h4>
-          <ul class="space-y-5 text-sm">
-            <li class="flex items-start gap-4">
-               <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-majak-orange shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-               </div>
-               <div>
-                  <p class="text-gray-300 font-medium">Alamat Kantor</p>
-                  <p class="text-gray-500 mt-1">Gang Gatot Kaca No.004, Kp. Jawa Atas, Kab. Bangka, Kep. Bangka Belitung, 33214</p>
-               </div>
+            <li class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span>0851 2115 2820 (WA)</span>
             </li>
-            <li class="flex items-start gap-4">
-               <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-majak-orange shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-               </div>
-               <div>
-                  <p class="text-gray-300 font-medium">Email</p>
-                  <a href="mailto:Majak.amanpajak2025@gmail.com" class="text-gray-500 hover:text-white transition mt-1 block">Majak.amanpajak2025@gmail.com</a>
-               </div>
+            <li class="flex items-start gap-3">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>majak.amanpajak2025@gmail.com</span>
             </li>
-            <li class="flex items-start gap-4">
-               <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-majak-orange shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
-               </div>
-               <div>
-                  <p class="text-gray-300 font-medium">WhatsApp / Telepon</p>
-                  <p class="text-gray-500 mt-1">(+62) 851 2115 2820 (Czultan Brian)</p>
-               </div>
+             <li class="flex items-start gap-3">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Gang Gatot Kaca No.04, Bangka</span>
             </li>
           </ul>
         </div>
 
+        <!-- Social -->
+        <div>
+             <h4 class="text-lg font-bold mb-6 text-gray-200">Social Media</h4>
+             <div class="flex gap-4">
+                 <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-accent hover:text-dark transition-all duration-300">
+                     <!-- Generic Social Icon -->
+                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.68c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                 </a>
+                 <div class="text-sm text-gray-400 mt-2">@majak_io</div>
+             </div>
+        </div>
       </div>
-      
-      <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-         <p class="text-xs text-gray-600 font-medium">© 2025 PT Indonesian Taxlaw Center. All rights reserved.</p>
-         <div class="flex gap-6 text-xs text-gray-600">
-            <a href="#" class="hover:text-majak-orange transition">Privacy Policy</a>
-            <a href="#" class="hover:text-majak-orange transition">Terms of Service</a>
-         </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>&copy; 2025 PT Indonesian Taxlaw Center. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+             <a href="#" class="hover:text-white">Privacy</a>
+             <a href="#" class="hover:text-white">Terms</a>
+        </div>
       </div>
     </div>
   </footer>

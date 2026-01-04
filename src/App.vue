@@ -1,27 +1,23 @@
 <script setup>
-import { onMounted } from 'vue';
-import ThreeBackground from './components/ThreeBackground.vue';
-import Navbar from './components/Navbar.vue'; // Import Navbar
-import Footer from './components/Footer.vue'; // Import Footer
-import HomeView from './views/HomeView.vue';
-import AOS from 'aos';
-
-onMounted(() => {
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
-});
+import Navbar from './components/Navbar.vue';
+import Hero from './components/Hero.vue';
+import About from './components/About.vue';
+import Services from './components/Services.vue';
+import Testimonials from './components/Testimonials.vue';
+import CTA from './components/CTA.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <ThreeBackground />
-
-  <Navbar />
-
-  <main>
-    <HomeView />
-  </main>
-
-  <Footer />
+  <div class="min-h-screen bg-light font-sans text-dark antialiased">
+    <Navbar />
+    <main>
+      <Hero />
+      <About />
+      <Services />
+      <Testimonials />
+      <CTA />
+    </main>
+    <Footer />
+  </div>
 </template>

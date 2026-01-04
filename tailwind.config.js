@@ -7,14 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'majak-blue': '#0056b3', 
-        'majak-dark': '#0f172a',
-        'majak-orange': '#f97316',
-        'majak-accent': '#ff8e3c', // Oranye lebih muda untuk gradasi
+        primary: '#0B3C5D',
+        secondary: '#1E6FA8',
+        accent: '#F4C430',
+        light: '#F8FAFC',
+        dark: '#1F2937',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'], // Font Utama jadi Poppins
-      }
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
