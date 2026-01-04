@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0B3C5D',
-        secondary: '#1E6FA8',
-        accent: '#F4C430',
+        primary: '#004AAD', // Deep Blue (Right side of logo gradient)
+        secondary: '#5DE0E6', // Cyan/Light Blue (Left side of logo gradient)
+        accent: '#FF914D', // Orange (Updated as requested)
         light: '#F8FAFC',
         dark: '#1F2937',
       },

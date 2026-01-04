@@ -7,7 +7,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         <!-- Brand -->
         <div class="space-y-4">
-          <h3 class="text-3xl font-heading font-bold text-white tracking-tight">MAJAK</h3>
+          <img src="/majak-logo.png" alt="MAJAK Logo" class="h-10 w-auto object-contain brightness-0 invert" />
           <p class="text-gray-400 text-sm leading-relaxed">
             Mitra perpajakan profesional untuk pengusaha dan individu di Indonesia. Mengedepankan kepastian dan kepatuhan.
           </p>
