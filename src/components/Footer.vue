@@ -56,17 +56,27 @@ const services = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
         
-        <div class="lg:col-span-4 space-y-6">
+        <div class="lg:col-span-4 space-y-6" data-aos="fade-up" data-aos-delay="0">
           <div class="flex items-center gap-2 mb-4">
-             <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-dark font-bold text-xl">M</div>
+             <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-dark font-bold text-xl"></div>
              <h3 class="text-3xl font-heading font-extrabold text-white tracking-tight">MAJAK</h3>
           </div>
           <p class="text-gray-400 text-sm leading-relaxed text-justify">
              Mitra perpajakan profesional untuk pengusaha dan individu di Indonesia. Mengedepankan kepastian, ketertiban, dan kepatuhan dalam setiap layanan.
           </p>
+          
+          <!-- Social Icons -->
+          <div class="flex flex-wrap gap-2">
+             <a v-for="social in socials" :key="social.name" :href="social.url" target="_blank" :aria-label="social.name"
+                  class="w-8 h-8 rounded bg-gray-900 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-white transition-all duration-300 transform hover:-translate-y-1 group">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path :d="social.icon" />
+                  </svg>
+              </a>
+          </div>
         </div>
 
-        <div class="lg:col-span-3 lg:pl-8">
+        <div class="lg:col-span-3 lg:pl-8" data-aos="fade-up" data-aos-delay="100">
           <h4 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Layanan Kami</h4>
           <ul class="space-y-4 text-sm text-gray-400">
             <li v-for="(service, idx) in services" :key="idx" class="flex items-start gap-2 group cursor-pointer">
@@ -76,36 +86,46 @@ const services = [
           </ul>
         </div>
 
-        <div class="lg:col-span-5">
+        <div class="lg:col-span-2" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Navigasi</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#home" class="hover:text-accent transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-accent transition-colors">Tentang Kami</a></li>
+            <li><a href="#services" class="hover:text-accent transition-colors">Layanan</a></li>
+            <li><a href="#faq" class="hover:text-accent transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3" data-aos="fade-up" data-aos-delay="300">
           <h4 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Info Kontak</h4>
           <ul class="space-y-5 text-sm text-gray-400">
-            <li class="flex items-start gap-4 group">
-              <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0 text-accent group-hover:bg-accent group-hover:text-dark transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </div>
-              <div>
-                <span class="block text-xs uppercase text-gray-500 font-bold tracking-wider mb-1">WhatsApp</span>
-                <a href="https://wa.me/6285121152820" target="_blank" class="text-white hover:text-accent transition-colors">0851 2115 2820</a>
-              </div>
-            </li>
-
-            <li class="flex items-start gap-4 group">
+            <li class="flex items-center gap-4 group">
                <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0 text-accent group-hover:bg-accent group-hover:text-dark transition-colors">
                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                  </svg>
                </div>
                <div>
-                <span class="block text-xs uppercase text-gray-500 font-bold tracking-wider mb-1">Email</span>
-                <span class="text-white hover:text-accent transition-colors cursor-pointer">majak.amanpajak2025@gmail.com</span>
+                  <span class="block text-xs uppercase text-gray-500 font-bold tracking-wider mb-1">WhatsApp</span>
+                  <a href="https://wa.me/6285121152820" target="_blank" class="text-white hover:text-accent transition-colors">+62 851 2115 2820</a>
                </div>
             </li>
 
+            <li class="flex items-center gap-4 group">
+                <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0 text-accent group-hover:bg-accent group-hover:text-dark transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                   <span class="block text-xs uppercase text-gray-500 font-bold tracking-wider mb-1">Email</span>
+                   <a href="mailto:majak.amanpajak2025@gmail.com" class="text-white hover:text-accent transition-colors break-all">majak.amanpajak2025@gmail.com</a>
+                </div>
+            </li>
+
             <li class="flex items-start gap-4 group">
-               <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0 text-accent group-hover:bg-accent group-hover:text-dark transition-colors">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0 text-accent group-hover:bg-accent group-hover:text-dark transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -125,21 +145,9 @@ const services = [
 
       <div class="border-t border-gray-800 pt-10 mt-10">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-sm text-gray-500 text-center md:text-left">
+            <p class="text-sm text-gray-500 text-center md:text-left w-full">
                 &copy; 2025 MAJAK. All rights reserved.
             </p>
-            
-            <div class="flex flex-wrap justify-center gap-3">
-                 <a v-for="social in socials" :key="social.name" :href="social.url" target="_blank" :aria-label="social.name"
-                    class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-dark transition-all duration-300 transform hover:-translate-y-1 group relative">
-                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                         <path :d="social.icon" />
-                     </svg>
-                     <span class="absolute -top-10 bg-white text-dark text-[10px] font-bold py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">
-                         {{ social.handle }}
-                     </span>
-                 </a>
-            </div>
         </div>
       </div>
     </div>

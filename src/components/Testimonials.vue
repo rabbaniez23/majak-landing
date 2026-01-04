@@ -5,70 +5,70 @@ const testimonials = [
     role: 'Direktur PT Mas Elpita Service',
     text: 'MAJAK membantu kami mengelola kewajiban perpajakan perusahaan secara tertib dan terstruktur. Pelaporan menjadi lebih rapi dan sesuai ketentuan. Partner yang dapat diandalkan.',
     initial: 'M',
-    color: 'bg-blue-600'
+    color: 'bg-primary/10 text-primary'
   },
   {
     name: 'Muhammad Fatir',
     role: 'Ketua Koperasi Merah Putih',
     text: 'MAJAK memberikan pelayanan yang cepat, tepat, dan tentunya ramah. Seluruh proses administrasi perpajakan koperasi ditangani dengan baik dan dijelaskan secara jelas, sehingga kami merasa lebih tenang dan percaya.',
     initial: 'M',
-    color: 'bg-emerald-600'
+    color: 'bg-accent/10 text-accent'
   },
   {
     name: 'Andi Pratama',
     role: 'Direktur CV',
     text: 'Terima kasih MAJAK atas penanganan SP2DK yang profesional. Proses jelas dan membuat kami merasa tenang.',
     initial: 'A',
-    color: 'bg-orange-600'
+    color: 'bg-secondary/10 text-secondary'
   },
   {
     name: 'Ainin Pratiwi',
     role: 'Bendahara Koperasi Jasa Agro Hutan Lestari',
     text: 'MAJAK sangat membantu kami dalam pelaporan SPT Bulanan maupun SPT Tahunan koperasi. Prosesnya tertib, tepat waktu, dan dijelaskan dengan bahasa yang mudah dipahami. Kami merasa lebih tenang karena kewajiban perpajakan koperasi dikelola secara profesional.',
     initial: 'A',
-    color: 'bg-purple-600'
+    color: 'bg-primary/10 text-primary'
   },
   {
     name: 'Gren Dinata',
     role: 'Direktur PT Gren Indo Teknika',
     text: 'Dengan pendampingan MAJAK, administrasi perusahaan menjadi lebih tertata, termasuk pengelolaan kewajiban perpajakan. Proses yang rapi dan terstruktur membuat kami dapat lebih fokus pada ekspansi dan pengembangan usaha.',
     initial: 'G',
-    color: 'bg-red-600'
+    color: 'bg-accent/10 text-accent'
   },
   {
     name: 'Jhohan Adhi Ferdiansyah',
     role: 'Advokat J.A Ferdian & Partners',
     text: 'Czultan Brian memberikan edukasi dan pendampingan Coretax secara komprehensif, profesional, serta selaras dengan ketentuan hukum dan peraturan perundang-undangan perpajakan yang berlaku.',
     initial: 'J',
-    color: 'bg-indigo-600'
+    color: 'bg-secondary/10 text-secondary'
   },
   {
     name: 'Naufal Rizki Rabbani',
     role: 'Founder Web Development',
     text: 'Basing k lh fal', 
     initial: 'N',
-    color: 'bg-teal-600'
+    color: 'bg-primary/10 text-primary'
   },
   {
     name: 'Muhammad Dzaki',
     role: 'Founder Arachnova',
     text: 'MAJAK memberikan layanan dan pendampingan perpajakan dari A–Z. Seluruh proses dijelaskan dengan jelas dan ditangani secara profesional, sehingga kami dapat lebih fokus pada pengembangan produk dan bisnis.',
     initial: 'M',
-    color: 'bg-cyan-600'
+    color: 'bg-accent/10 text-accent'
   },
   {
     name: 'Muhammad Qodri',
     role: 'Direktur PT Legal Kreatif',
     text: 'MAJAK membantu pengelolaan kewajiban perpajakan perusahaan kami yang kompleks secara profesional dan sesuai ketentuan, memberikan rasa aman dan ketenangan bagi manajemen.',
     initial: 'M',
-    color: 'bg-pink-600'
+    color: 'bg-secondary/10 text-secondary'
   },
   {
     name: 'Rahmat Robuwan',
     role: 'Direktur PT Legalin Aja Dulu',
     text: 'MAJAK memberikan pendampingan profesional dalam pengelolaan kewajiban perpajakan perusahaan kami, sehingga memberikan kepastian dan ketenangan bagi manajemen.',
     initial: 'R',
-    color: 'bg-lime-600'
+    color: 'bg-primary/10 text-primary'
   }
 ];
 </script>

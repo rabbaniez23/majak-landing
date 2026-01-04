@@ -6,8 +6,8 @@ const aboutImage = "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ix
 <template>
   <section id="about" class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-white">
     
-    <div class="absolute inset-0 bg-gradient-to-br from-maj-cyan to-secondary -z-20 opacity-10"></div>
-    <div class="absolute inset-0 bg-white/40 -z-10 mix-blend-overlay"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 -z-20"></div>
+    <div class="absolute inset-0 bg-white/60 -z-10 backdrop-blur-[1px]"></div>
 
     <div class="container mx-auto px-6 relative z-10">
       <div class="flex flex-col lg:flex-row items-stretch justify-between gap-12 lg:gap-20">
@@ -17,17 +17,17 @@ const aboutImage = "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ix
             <div class="absolute top-10 left-0 w-3/4 h-[90%] bg-secondary/10 backdrop-blur-sm rounded-tr-[80px] rounded-bl-[80px] -z-10 border border-secondary/10"></div>
             
             <div class="relative h-full flex items-center justify-center lg:justify-start pl-4 lg:pl-8">
-              <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white w-full max-w-md transform hover:scale-[1.02] transition-transform duration-500 bg-white">
-                <img :src="aboutImage" alt="Tax Consultant Team" class="w-full h-full object-cover aspect-[4/5]">
+              <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white w-full max-w-md transform hover:scale-[1.02] transition-transform duration-500 bg-white group">
+                <img :src="aboutImage" alt="Tax Consultant Team" class="w-full h-full object-cover aspect-[4/5] filter sepia-[0.1] group-hover:sepia-0 transition-all duration-500">
                 
                 <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur p-3 rounded-xl shadow-lg flex items-center gap-3 animate-bounce" style="animation-duration: 4s;">
-                  <div class="bg-green-100 p-2 rounded-lg text-green-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.491 4.491 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                  <div class="bg-primary/10 p-2 rounded-lg text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p class="text-xs text-gray-500">Status</p>
+                    <p class="text-[10px] text-gray-500 uppercase tracking-widest font-semibold">Status</p>
                     <p class="font-bold text-gray-800 text-sm">Terpercaya</p>
                   </div>
                 </div>
@@ -37,69 +37,70 @@ const aboutImage = "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ix
         </div>
 
         <div class="lg:w-1/2 flex flex-col justify-center order-1 lg:order-2" data-aos="fade-left">
-          <h1 class="text-3xl lg:text-5xl font-extrabold text-secondary leading-tight mb-6">
-             Setiap Bisnis Memiliki <span class="text-primary drop-shadow-sm">Tanggung Jawab Pajak</span> yang Perlu Dikelola dengan Tepat
+          <h2 class="text-sm font-bold text-accent tracking-widest uppercase mb-4">Tentang Kami</h2>
+          <h1 class="text-3xl lg:text-4xl font-extrabold text-primary leading-tight mb-6">
+             Setiap Bisnis Memiliki <span class="text-secondary drop-shadow-sm">Tanggung Jawab Pajak</span> yang Perlu Dikelola dengan Tepat
           </h1>
-          <p class="text-gray-600 text-lg leading-relaxed mb-10 font-medium">
+          <p class="text-gray-600 text-base leading-relaxed mb-10 font-normal">
              MAJAK hadir sebagai partner pajak yang membantu pengusaha, UMKM dan profesional memahami, mengelola, dan menuntaskan kewajiban perpajakan secara tertib dan sesuai ketentuan dengan pendekatan yang humanis.
           </p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            <div class="space-y-3 bg-white p-6 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+            <div class="space-y-3 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-300 group">
               <div class="flex items-center gap-3 mb-2">
-                <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-secondary">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                <div class="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 class="font-bold text-lg text-secondary leading-tight">Pendampingan Ahli</h3>
+                <h3 class="font-bold text-lg text-gray-800 leading-tight">Pendampingan Ahli</h3>
               </div>
-              <p class="text-sm text-gray-600 leading-relaxed">
+              <p class="text-sm text-gray-500 leading-relaxed font-light">
                  Layanan ditangani oleh tim yang memahami regulasi perpajakan dan praktik lapangan secara rapi dan terukur.
               </p>
             </div>
 
-            <div class="space-y-3 bg-white p-6 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+            <div class="space-y-3 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-accent/30 transition-all duration-300 group">
               <div class="flex items-center gap-3 mb-2">
-                <div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center text-primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10.496 2.132a1 1 0 00-.992 0l-7 4A1 1 0 003 8v7a1 1 0 100 2h14a1 1 0 100-2V8a1 1 0 00.496-1.868l-7-4zM6 9a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1zm3 1a1 1 0 012 0v3a1 1 0 11-2 0v-3zm5-1a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1z" clip-rule="evenodd" />
+                <div class="w-10 h-10 rounded-lg bg-accent/5 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 class="font-bold text-lg text-secondary leading-tight">Solusi Bisnis</h3>
+                <h3 class="font-bold text-lg text-gray-800 leading-tight">Solusi Bisnis</h3>
               </div>
-              <p class="text-sm text-gray-600 leading-relaxed">
+              <p class="text-sm text-gray-500 leading-relaxed font-light">
                  Pendekatan yang kami gunakan selalu disesuaikan dengan kondisi usaha dan kebutuhan spesifik klien.
               </p>
             </div>
           </div>
 
-          <div class="space-y-3 mb-10 bg-white/50 p-6 rounded-2xl border border-gray-200">
+          <div class="space-y-4 mb-10 bg-gray-50/80 p-6 rounded-2xl border border-gray-100">
             <div class="flex items-start gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
               </svg>
               <span class="text-gray-700 font-medium text-sm">Pendampingan pajak sesuai regulasi yang berlaku</span>
             </div>
             <div class="flex items-start gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
               </svg>
               <span class="text-gray-700 font-medium text-sm">Proses administrasi tertib dan terdokumentasi</span>
             </div>
             <div class="flex items-start gap-3">
-               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
               </svg>
               <span class="text-gray-700 font-medium text-sm">Komunikasi jelas dan profesional</span>
             </div>
           </div>
 
           <div>
-            <a href="#services" class="inline-flex items-center gap-3 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 ring-4 ring-primary/20">
+            <a href="#services" class="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">
               LIHAT LAYANAN KAMI
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
           </div>
@@ -108,24 +109,24 @@ const aboutImage = "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ix
     </div>
   </section>
 
-  <section class="relative -mt-16 z-20 pb-20">
+  <section class="relative -mt-12 z-20 pb-20">
     <div class="container mx-auto px-6">
-      <div class="bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-8 lg:p-12 border border-gray-100">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+      <div class="bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.08)] p-8 lg:p-12 border border-gray-100" data-aos="fade-up">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
           
           <div class="px-4 py-4 md:py-0">
-            <h3 class="text-4xl lg:text-5xl font-extrabold text-secondary mb-2">100+</h3>
-            <p class="text-gray-600 font-medium text-sm lg:text-base">Klien yang didampingi secara profesional</p>
+            <h3 class="text-4xl lg:text-5xl font-extrabold text-primary mb-2">100+</h3>
+            <p class="text-gray-500 font-medium text-sm lg:text-base">Klien yang didampingi secara profesional</p>
           </div>
           
           <div class="px-4 py-4 md:py-0">
-            <h3 class="text-4xl lg:text-5xl font-extrabold text-secondary mb-2">Ratusan</h3>
-            <p class="text-gray-600 font-medium text-sm lg:text-base">Pelaporan dan administrasi pajak ditangani</p>
+            <h3 class="text-4xl lg:text-5xl font-extrabold text-primary mb-2">Ratusan</h3>
+            <p class="text-gray-500 font-medium text-sm lg:text-base">Pelaporan dan administrasi pajak ditangani</p>
           </div>
           
           <div class="px-4 py-4 md:py-0">
-            <h3 class="text-4xl lg:text-5xl font-extrabold text-secondary mb-2">Expert</h3>
-            <p class="text-gray-600 font-medium text-sm lg:text-base">Dalam pendampingan kewajiban perpajakan</p>
+            <h3 class="text-4xl lg:text-5xl font-extrabold text-primary mb-2">Expert</h3>
+            <p class="text-gray-500 font-medium text-sm lg:text-base">Dalam pendampingan kewajiban perpajakan</p>
           </div>
           
         </div>

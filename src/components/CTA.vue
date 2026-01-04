@@ -4,8 +4,8 @@ const founderImage = "https://images.unsplash.com/photo-1560250097-0b93528c311a?
 
 <template>
   <!-- Added negative margin-bottom to create overlap with footer -->
-  <section class="relative z-10 px-4 sm:px-6 lg:px-8 -mb-32 pointer-events-none">
-    <div class="max-w-7xl mx-auto pointer-events-auto">
+  <section class="relative z-10 px-4 sm:px-6 lg:px-8 -mb-28 pointer-events-none">
+    <div class="max-w-7xl mx-auto pointer-events-auto" data-aos="fade-up">
       <div class="bg-primary rounded-[3rem] p-8 md:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
         
         <!-- Background Patterns -->

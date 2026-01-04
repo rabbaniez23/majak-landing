@@ -42,7 +42,7 @@ const steps = [
           <p class="text-gray-700 text-lg mb-8 leading-relaxed font-medium">
             Kami menyederhanakan proses perpajakan yang rumit menjadi langkah-langkah praktis agar Anda bisa tetap tenang dan fokus pada pengembangan bisnis.
           </p>
-          <a href="https://wa.me/6285121152820" target="_blank" class="inline-flex items-center gap-3 bg-primary hover:bg-primary-dark text-black px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 group">
+          <a href="https://wa.me/6285121152820" target="_blank" class="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-primary/30 hover:-translate-y-1 group">
             Mulai Konsultasi Gratis
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -55,7 +55,7 @@ const steps = [
                class="flex gap-6 p-6 rounded-2xl bg-white shadow-sm hover:shadow-xl border border-gray-100 hover:border-primary/30 transition-all duration-300 group cursor-default"
                data-aos="fade-up" :data-aos-delay="index * 100">
             
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/10 text-secondary group-hover:bg-primary group-hover:text-black flex items-center justify-center font-bold text-xl transition-colors duration-300">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/10 text-secondary group-hover:bg-primary group-hover:text-white flex items-center justify-center font-bold text-xl transition-colors duration-300">
               {{ step.number }}
             </div>
             
